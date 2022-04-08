@@ -1,0 +1,102 @@
+input { outline: none; }
+input:focus{
+    border-color:lightblue; 
+}
+input:invalid:focus{
+    border-color:red; 
+}
+button{
+    padding:10px 20px;
+    background-color: #3b72bf;
+    color:white;
+    border:none;
+    border-radius:5px;
+}
+input{
+    padding:3px 15px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+label{
+    text-transform: uppercase;
+    font-size: 10px;
+}
+p{
+    font-size: 18px;
+}
+#sign-up-form{
+    display:flex;
+    max-width:950px;
+    height:750px;
+    justify-content: center;
+    border:solid 3px black;
+}
+#sidebar{
+    flex:1.2;
+    background: url("FFXII_Bhujerba_art.jpg");
+    position:relative;
+
+}
+#content-area{
+    flex:2;
+    display:flex;
+    flex-direction: column;
+}
+#form-area{
+    flex:1;
+    padding:30px;
+    display:flex;
+    flex-direction: column;
+    place-content: flex-end;
+    background-color:rgb(247, 247, 247);
+}
+#formbox{
+    flex:1;
+    padding:30px;
+    display:flex;
+    flex-direction: column;
+    place-content: flex-end;
+    box-shadow: 0 14px 13px -13px grey;
+    z-index: 2;
+}
+#confirm-area{
+    flex:1;
+    padding:30px;
+    background-color: rgb(247, 247, 247);
+}
+#logo{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    max-width: 100%;
+    width:250px;
+    min-width: 80px;
+
+}
+#logo-area{
+    background-color:rgba(0, 0, 0, 0.377);
+    margin-top:150px;
+    padding:30px;
+}
+#credit{
+    position:absolute;
+    bottom:0;
+    width: 100%;
+    text-align: center;
+    color:white;
+}
+#form{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+.column{
+    gap:10px;
+    display:flex;
+}
+.error-message{
+    text-transform:uppercase;
+    color:red;
+    font-size:8px;
+    display:none;
+}
